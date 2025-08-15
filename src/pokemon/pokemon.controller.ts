@@ -22,7 +22,7 @@ export class PokemonController {
 
   @Get(':term')
   findOne(@Param('term') term: string) {
-    return 'NOOOO';
+    return this.pokemonService.findOne(term);
   }
 
   @Patch(':term')
