@@ -12,10 +12,20 @@
 ```
  npm i -g @nestjs/cli
 ```
-4. Levanta la Base de Datos
+4. clonar el archivo ``` .env.template``` y renombrar la copia  a  ```.env```
+
+5. Levanta la Base de Datos
 ```
  docker compose up -d
 ```
+6. Levantar la aplicacion
+```
+ npm run start:dev
+```
+7. Poblar la DB con la semilla
+```
+ http://localhost:300/api/v1/seed
+```
 #Stack Usado
 * Nest
-* mongo
+* mongoDB
